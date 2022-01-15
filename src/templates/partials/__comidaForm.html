@@ -1,0 +1,33 @@
+<form action="/estados/{{nombreC}}" method="POST" class="card bg-dark text-light">
+
+    {% for ids in ids%}
+    {% endfor %}
+
+    <div class="card-body p-4">
+        <center>
+            <h1>Registrar</h1>
+        </center>
+        <br>
+
+        <div class="mb-3">
+            <label for="nombre">Ingrese el nombre del pedido:</label>
+            <input type="text" name="nameP" placeholder="nombre del pedido"
+                class="form-control rounded-0 bg-dark border-0 text-white">
+
+        </div>
+        <div class="mb-3">
+            <label for="valor">Ingrese el valor del pedido:</label>
+            <input type="text" name="valorP" placeholder="valor del pedido"
+                class="form-control rounded-0 bg-dark border-0 text-white">
+
+        </div>
+
+
+        <button class="btn btn-primary">hacer pedido</button>
+
+    </div>
+
+
+
+
+</form>

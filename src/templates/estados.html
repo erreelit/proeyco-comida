@@ -1,0 +1,51 @@
+{% extends "layout.html" %}
+
+{% block content %}
+{% for usuario in usuario: %}
+
+<div class="card mb-1 text-white bg-dark">
+
+    <div class="card-body">
+        <h4>Nombre:</h4>
+        <div class="d-flex justify-content-between">
+            <h5>{{usuario.nombreC}}</h5>
+
+            
+
+        </div>
+        <h4>ciudad:</h4>
+        <p>{{usuario.ciudad}} </p>
+        <h4>direccion:</h4>
+        <p>{{usuario.direccion}} </p>
+        <h4>telefono:</h4>
+        <p>{{usuario.telefonoC}} </p>
+        <h4>fecha de pedido:</h4>
+        <p>{{usuario.FechaP}} </p>
+        <h4>pedido:</h4>
+        <p>{{usuario.nombre}} </p>
+        <h4>valor:</h4>
+        <p>{{usuario.valor}} </p>
+        <h4>ciudad:</h4>
+        <p>{{usuario.estado}} </p>
+
+  
+        
+        <div>
+            <a href="/estadoUPdate/{{usuario.id}}" class="btm bg-black btn-sm rounded-0">Actualizar estado</a>
+            <a href="/delete/{{usuario.id}}" class="btm btn-danger btn-sm rounded-0">Eliminar pedido</a>
+           
+
+        </div>
+
+
+
+
+
+    </div>
+
+
+</div>
+
+{% endfor %}
+{%endblock%}
+

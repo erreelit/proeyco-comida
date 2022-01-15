@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+{% block content %}
+
+
+<form action="/estadoUPdate/{{estados.id}}" method="POST" class="card bg-dark text-light">
+
+
+
+    <div class="card-body p-4">
+
+
+        <div class="mb-3">
+            <label for="estado">Ingrese el nuevo estado:</label>
+            <input type="text" name="estado" placeholder="nombre del pedido"
+                class="form-control rounded-0 bg-dark border-0 text-white" value="{{estados.estado}}">
+
+        </div>
+        <div class="mb-3">
+            <label for="fecha">Ingrese lafecha del cambio:</label>
+            <input type="text" name="fecha" placeholder="nombre del pedido"
+                class="form-control rounded-0 bg-dark border-0 text-white"value="{{estados.FechaP}}">
+
+        </div>
+
+    </div>
+
+    <button class="btn btn-primary">Actualizar</button>
+
+
+</form>
+
+
+
+
+{%endblock%}
